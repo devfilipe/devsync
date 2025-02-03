@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "devsync"
+version = "0.1.0"
+description = ""
+authors = ["Filipe Moraes"]
+packages = [
+    { include = "devsync" }
+]
+
+[tool.poetry.scripts]
+devsync = "devsync.devsync:main"
+devsync-dist = "devsync.dist:dist"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
